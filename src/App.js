@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-
+import data from "./hobbies.json"
 function App() {
+  const [randomHobby, setRandomHobby] = useState("");
+
+  const generateHobby = () => {
+    const allHobbies = data.categories.map(category => category.hobbies.map(hobby => hobby)).flat()
+    setRandomHobby(allHobbies[Math.floor(Math.random() * allHobbies.length)])
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        {randomHobby && <h1>Why Don't You Try: <strong>{randomHobby}</strong></h1>}
+      </div>
+      <button onClick={generateHobby}>{randomHobby ? "Maybe Not, Lets Try Something else" : "Find Me A New Hobby"}</button>
     </div>
   );
 }
