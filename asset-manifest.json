@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hobby-selector/static/css/main.ad08332d.css",
+    "main.js": "/hobby-selector/static/js/main.c0077458.js",
+    "static/js/787.2998b333.chunk.js": "/hobby-selector/static/js/787.2998b333.chunk.js",
+    "index.html": "/hobby-selector/index.html",
+    "main.ad08332d.css.map": "/hobby-selector/static/css/main.ad08332d.css.map",
+    "main.c0077458.js.map": "/hobby-selector/static/js/main.c0077458.js.map",
+    "787.2998b333.chunk.js.map": "/hobby-selector/static/js/787.2998b333.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad08332d.css",
+    "static/js/main.c0077458.js"
+  ]
+}
